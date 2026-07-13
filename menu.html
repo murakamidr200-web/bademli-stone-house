@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#10343c">
+<title>Bademli Stone House — Menu</title>
+<meta name="description" content="Bademli Stone House café menu in Turkish, English and Russian.">
+<style>
+:root{--ink:#17353c;--cream:#f5efe4;--paper:#fffdf8;--sand:#dcc8a9;--blue:#69aeb5;--muted:#6d7c7f}
+*{box-sizing:border-box} body{margin:0;background:linear-gradient(180deg,#e9f2f0 0,#f7f1e6 28%,#f3eadc 100%);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+.wrap{max-width:760px;margin:auto;padding:22px 16px 52px}
+.hero{background:var(--ink);border-radius:28px;padding:28px 22px 24px;color:white;box-shadow:0 18px 60px #17353c30;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:220px;height:220px;border:28px solid #6bb0b7;border-radius:50%;right:-110px;top:-110px;opacity:.35}
+.logo{display:flex;align-items:center;gap:14px;position:relative;z-index:1}
+.mark{width:58px;height:58px;border-radius:18px;background:#f5efe4;display:grid;place-items:center}
+.door{width:30px;height:38px;border:4px solid #68aeb5;border-bottom:0;border-radius:18px 18px 0 0;position:relative}
+.door:after{content:"";position:absolute;left:50%;top:0;bottom:0;border-left:2px solid #68aeb5}
+.brand{font-family:Georgia,serif;font-size:20px;letter-spacing:.08em}
+.hero h1{font:700 42px/1 Georgia,serif;margin:28px 0 10px;position:relative;z-index:1}
+.hero p{margin:0;color:#dce8e8;position:relative;z-index:1}
+.langbar{display:flex;gap:8px;margin:14px 0 18px;position:sticky;top:10px;z-index:20;background:#f7f1e6dd;backdrop-filter:blur(12px);padding:8px;border-radius:16px}
+.langbar button{flex:1;border:0;border-radius:12px;padding:11px 8px;font-weight:800;background:white;color:var(--ink);cursor:pointer}
+.langbar button.active{background:var(--ink);color:white}
+.menu-card{background:var(--paper);border:1px solid #e9ddcb;border-radius:24px;padding:20px;margin:14px 0;box-shadow:0 12px 34px #604d3420}
+.menu-card h2{font:700 25px/1.2 Georgia,serif;margin:0 0 14px;display:flex;gap:10px;align-items:center}
+.menu-row{display:flex;align-items:flex-end;gap:8px;padding:11px 0;border-bottom:1px solid #eee5d8}
+.menu-row:last-child{border-bottom:0}
+.item-name{font-weight:650;max-width:66%}
+.dots{flex:1;border-bottom:2px dotted #c8b89e;transform:translateY(-5px)}
+.price{text-align:right;white-space:nowrap}
+.price strong{display:block;font-size:16px}
+
+.breakfast{background:linear-gradient(135deg,#6aaeb5,#3d7f88);color:white;border-radius:24px;padding:22px;margin:14px 0;box-shadow:0 12px 34px #21464a30}
+.breakfast .big{font:700 28px Georgia,serif;margin:4px 0 8px}
+.breakfast .price2{font-weight:900;font-size:22px}
+.note{text-align:center;padding:22px 10px;color:#536a6f}
+.note strong{font:700 23px Georgia,serif;display:block;color:var(--ink);margin-bottom:8px}
+
+.t{display:none} body[data-lang="tr"] .tr,body[data-lang="en"] .en,body[data-lang="ru"] .ru{display:inline}
+@media(max-width:480px){.hero h1{font-size:36px}.brand{font-size:16px}.item-name{max-width:60%}}
+</style>
+</head>
+<body data-lang="tr">
+<div class="wrap">
+  <header class="hero">
+    <div class="logo"><div class="mark"><div class="door"></div></div><div class="brand">BADEMLİ STONE HOUSE</div></div>
+    <h1><span class="t tr">Menü</span><span class="t en">Menu</span><span class="t ru">Меню</span></h1>
+    <p><span class="t tr">Keyifli anlar, sıcak misafirperverlik.</span><span class="t en">Good moments, warm hospitality.</span><span class="t ru">Тёплое гостеприимство и приятные моменты.</span></p>
+  </header>
+
+  <div class="langbar">
+    <button data-l="tr" class="active">Türkçe</button>
+    <button data-l="en">English</button>
+    <button data-l="ru">Русский</button>
+  </div>
+
+  
+    <section class="menu-card">
+      <h2><span>☕</span>
+        <span class="t tr">Sıcak İçecekler</span>
+        <span class="t en">Hot Drinks</span>
+        <span class="t ru">Горячие напитки</span>
+      </h2>
+      
+        <div class="menu-row">
+          <div class="item-name">
+            <span class="t tr">Çay Çeşitleri</span>
+            <span class="t en">Tea Selection</span>
+            <span class="t ru">Ассорти чая</span>
+          </div>
+          <div class="dots"></div>
+          <div class="price"><strong>100 TL</strong></div>
+        </div>
+        <div class="menu-row">
+          <div class="item-name">
+            <span class="t tr">Türk Kahvesi</span>
+            <span class="t en">Turkish Coffee</span>
+            <span class="t ru">Турецкий кофе</span>
+          </div>
+          <div class="dots"></div>
+          <div class="price"><strong>150 TL</strong></div>
+        </div>
+        <div class="menu-row">
+          <div class="item-name">
+            <span class="t tr">Espresso</span>
+            <span class="t en">Espresso</span>
+            <span class="t ru">Эспрессо</span>
+          </div>
+          <div class="dots"></div>
+          <div class="price"><strong>200 TL</strong></div>
+        </div>
+        <div class="menu-row">
+          <div class="item-name">
+            <span class="t tr">Double Espresso</span>
+            <span class="t en">Double Espresso</span>
+            <span class="t ru">Двойной эспрессо</span>
+          </div>
+          <div class="dots"></div>
+          <div class="price"><strong>300 TL</strong></div>
+        </div>
+        <div class="menu-row">
+          <div class="item-name">
+            <span class="t tr">Americano</span>
+            <span class="t en">Americano</span>
+            <span class="t ru">Американо</span>
+          </div>
+          <div class="dots"></div>
+          <div class="price"><strong>200 TL</strong></div>
+        </div>
+        <div class="menu-row">
+          <div class="item-name">
+            <span class="t tr">Latte</span>
+            <span class="t en">Latte</span>
+            <span class="t ru">Латте</span>
+          </div>
+          <div class="dots"></div>
+          <div class="price"><strong>250 TL</strong></div>
+        </div>
+        <div class="menu-row">
+          <div class="item-name">
+            <span class="t tr">Cappuccino</span>
+            <span class="t en">Cappuccino</span>
+            <span class="t ru">Капучино</span>
+          </div>
+          <div class="dots"></div>
+          <div class="price"><strong>250 TL</strong></div>
+        </div>
+    </section>
+    <section class="menu-card">
+      <h2><span>🥤</span>
+        <span class="t tr">Soft İçecekler</span>
+        <span class="t en">Soft Drinks</span>
+        <span class="t ru">Безалкогольные напитки</span>
+      </h2>
+      
+        <div class="menu-row">
+          <div class="item-name">
+            <span class="t tr">Su (0,5 L)</span>
+            <span class="t en">Water (0.5 L)</span>
+            <span class="t ru">Вода (0,5 л)</span>
+          </div>
+          <div class="dots"></div>
+          <div class="price"><strong>50 TL</strong></div>
+        </div>
+        <div class="menu-row">
+          <div class="item-name">
+            <span class="t tr">Maden Suyu</span>
+            <span class="t en">Mineral Water</span>
+            <span class="t ru">Минеральная вода</span>
+          </div>
+          <div class="dots"></div>
+          <div class="price"><strong>100 TL</strong></div>
+        </div>
+        <div class="menu-row">
+          <div class="item-name">
+            <span class="t tr">Coca-Cola</span>
+            <span class="t en">Coca-Cola</span>
+            <span class="t ru">Coca-Cola</span>
+          </div>
+          <div class="dots"></div>
+          <div class="price"><strong>150 TL</strong></div>
+        </div>
+        <div class="menu-row">
+          <div class="item-name">
+            <span class="t tr">Sprite</span>
+            <span class="t en">Sprite</span>
+            <span class="t ru">Sprite</span>
+          </div>
+          <div class="dots"></div>
+          <div class="price"><strong>150 TL</strong></div>
+        </div>
+        <div class="menu-row">
+          <div class="item-name">
+            <span class="t tr">Fanta</span>
+            <span class="t en">Fanta</span>
+            <span class="t ru">Fanta</span>
+          </div>
+          <div class="dots"></div>
+          <div class="price"><strong>150 TL</strong></div>
+        </div>
+        <div class="menu-row">
+          <div class="item-name">
+            <span class="t tr">Fuse Tea</span>
+            <span class="t en">Fuse Tea</span>
+            <span class="t ru">Fuse Tea</span>
+          </div>
+          <div class="dots"></div>
+          <div class="price"><strong>150 TL</strong></div>
+        </div>
+        <div class="menu-row">
+          <div class="item-name">
+            <span class="t tr">Limonata</span>
+            <span class="t en">Lemonade</span>
+            <span class="t ru">Лимонад</span>
+          </div>
+          <div class="dots"></div>
+          <div class="price"><strong>200 TL</strong></div>
+        </div>
+        <div class="menu-row">
+          <div class="item-name">
+            <span class="t tr">Ayran</span>
+            <span class="t en">Ayran</span>
+            <span class="t ru">Айран</span>
+          </div>
+          <div class="dots"></div>
+          <div class="price"><strong>150 TL</strong></div>
+        </div>
+        <div class="menu-row">
+          <div class="item-name">
+            <span class="t tr">Meyve Suyu</span>
+            <span class="t en">Fruit Juice</span>
+            <span class="t ru">Фруктовый сок</span>
+          </div>
+          <div class="dots"></div>
+          <div class="price"><strong>150 TL</strong></div>
+        </div>
+        <div class="menu-row">
+          <div class="item-name">
+            <span class="t tr">Milkshake</span>
+            <span class="t en">Milkshake</span>
+            <span class="t ru">Молочный коктейль</span>
+          </div>
+          <div class="dots"></div>
+          <div class="price"><strong>200 TL</strong></div>
+        </div>
+    </section>
+    <section class="menu-card">
+      <h2><span>🍷</span>
+        <span class="t tr">Alkollü İçecekler</span>
+        <span class="t en">Alcoholic Drinks</span>
+        <span class="t ru">Алкогольные напитки</span>
+      </h2>
+      
+        <div class="menu-row">
+          <div class="item-name">
+            <span class="t tr">Efes 50 cl</span>
+            <span class="t en">Efes 50 cl</span>
+            <span class="t ru">Efes 50 cl</span>
+          </div>
+          <div class="dots"></div>
+          <div class="price"><strong>200 TL</strong></div>
+        </div>
+        <div class="menu-row">
+          <div class="item-name">
+            <span class="t tr">Tuborg 50 cl</span>
+            <span class="t en">Tuborg 50 cl</span>
+            <span class="t ru">Tuborg 50 cl</span>
+          </div>
+          <div class="dots"></div>
+          <div class="price"><strong>200 TL</strong></div>
+        </div>
+        <div class="menu-row">
+          <div class="item-name">
+            <span class="t tr">Miller 50 cl</span>
+            <span class="t en">Miller 50 cl</span>
+            <span class="t ru">Miller 50 cl</span>
+          </div>
+          <div class="dots"></div>
+          <div class="price"><strong>200 TL</strong></div>
+        </div>
+        <div class="menu-row">
+          <div class="item-name">
+            <span class="t tr">Cielo (Kadeh)</span>
+            <span class="t en">Cielo (Glass)</span>
+            <span class="t ru">Cielo (бокал)</span>
+          </div>
+          <div class="dots"></div>
+          <div class="price"><strong>200 TL</strong></div>
+        </div>
+        <div class="menu-row">
+          <div class="item-name">
+            <span class="t tr">Gilbey's Cin (5 cl)</span>
+            <span class="t en">Gilbey's Gin (5 cl)</span>
+            <span class="t ru">Джин Gilbey's (5 cl)</span>
+          </div>
+          <div class="dots"></div>
+          <div class="price"><strong>250 TL</strong></div>
+        </div>
+        <div class="menu-row">
+          <div class="item-name">
+            <span class="t tr">İstanblue Votka (5 cl)</span>
+            <span class="t en">İstanblue Vodka (5 cl)</span>
+            <span class="t ru">Водка İstanblue (5 cl)</span>
+          </div>
+          <div class="dots"></div>
+          <div class="price"><strong>250 TL</strong></div>
+        </div>
+        <div class="menu-row">
+          <div class="item-name">
+            <span class="t tr">Jameson Viski (5 cl)</span>
+            <span class="t en">Jameson Whiskey (5 cl)</span>
+            <span class="t ru">Виски Jameson (5 cl)</span>
+          </div>
+          <div class="dots"></div>
+          <div class="price"><strong>250 TL</strong></div>
+        </div>
+        <div class="menu-row">
+          <div class="item-name">
+            <span class="t tr">Johnnie Walker Black Label (5 cl)</span>
+            <span class="t en">Johnnie Walker Black Label (5 cl)</span>
+            <span class="t ru">Johnnie Walker Black Label (5 cl)</span>
+          </div>
+          <div class="dots"></div>
+          <div class="price"><strong>300 TL</strong></div>
+        </div>
+        <div class="menu-row">
+          <div class="item-name">
+            <span class="t tr">Yeni Seri Rakı (5 cl)</span>
+            <span class="t en">Yeni Seri Rakı (5 cl)</span>
+            <span class="t ru">Ракы Yeni Seri (5 cl)</span>
+          </div>
+          <div class="dots"></div>
+          <div class="price"><strong>250 TL</strong></div>
+        </div>
+    </section>
+
+  <section class="breakfast">
+    <div>🍳</div>
+    <div class="big">
+      <span class="t tr">Rezervasyonla Kahvaltı</span>
+      <span class="t en">Breakfast by Reservation</span>
+      <span class="t ru">Завтрак по предварительной брони</span>
+    </div>
+    <div>
+      <span class="t tr">Kişi başı</span><span class="t en">Per person</span><span class="t ru">На человека</span>
+    </div>
+    <div class="price2">800 TL</div>
+  </section>
+
+  <div class="note">
+    <strong><span class="t tr">Afiyet Olsun!</span><span class="t en">Enjoy!</span><span class="t ru">Приятного аппетита!</span></strong>
+    <span class="t tr">Bademli Stone House olarak sizleri ağırlamaktan mutluluk duyarız.</span>
+    <span class="t en">We are delighted to welcome you to Bademli Stone House.</span>
+    <span class="t ru">Мы рады приветствовать вас в Bademli Stone House.</span>
+  </div>
+</div>
+<script>
+const buttons=[...document.querySelectorAll('[data-l]')];
+buttons.forEach(b=>b.addEventListener('click',()=>{
+ document.body.dataset.lang=b.dataset.l;
+ document.documentElement.lang=b.dataset.l;
+ buttons.forEach(x=>x.classList.toggle('active',x===b));
+ localStorage.setItem('bademliLang',b.dataset.l);
+}));
+const saved=localStorage.getItem('bademliLang');
+if(saved && ['tr','en','ru'].includes(saved)) document.querySelector('[data-l="'+saved+'"]').click();
+</script>
+</body></html>
